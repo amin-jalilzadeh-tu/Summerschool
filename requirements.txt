@@ -10,11 +10,16 @@
 # it means jinja2 is missing - it is listed below and pip installs it.
 # ---------------------------------------------------------------------------
 
+# --- analysis libraries (what the notebook code uses) ---
 numpy>=1.23          # arithmetic, random weights (SMAA)
 pandas>=1.5          # CSV loading, tables, Styler (needs .apply_index -> pandas >= 1.4)
 jinja2>=3.0          # REQUIRED by pandas Styler to render the green/red table
 scipy>=1.9           # used in later notebooks (linear programming)
 matplotlib>=3.5      # used in later notebooks (plots)
+
+# --- to open and run the notebooks ---
+jupyterlab>=4.0      # the notebook interface
+ipykernel>=6.0       # lets the environment run as a notebook kernel
 
 # --- exact versions this repo was verified to run on ---
 # (pin these instead of the ranges above if you still hit an error)

@@ -1,3 +1,8 @@
+# virtual environment (do not commit - each person builds their own)
+summerschool/
+.venv/
+venv/
+
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
