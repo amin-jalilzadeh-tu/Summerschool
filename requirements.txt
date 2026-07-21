@@ -1,4 +1,29 @@
-numpy
-pandas
-scipy
-matplotlib
+# ---------------------------------------------------------------------------
+# Case Study 2 - Python dependencies
+#
+# Python 3.9 or newer.  Developed and tested on Python 3.13.9.
+#
+# Install with:
+#     pip install -r requirements.txt
+#
+# If the coloured table cell in Q1 fails with "ImportError: ... jinja2",
+# it means jinja2 is missing - it is listed below and pip installs it.
+# ---------------------------------------------------------------------------
+
+numpy>=1.23          # arithmetic, random weights (SMAA)
+pandas>=1.5          # CSV loading, tables, Styler (needs .apply_index -> pandas >= 1.4)
+jinja2>=3.0          # REQUIRED by pandas Styler to render the green/red table
+scipy>=1.9           # used in later notebooks (linear programming)
+matplotlib>=3.5      # used in later notebooks (plots)
+
+# --- exact versions this repo was verified to run on ---
+# (pin these instead of the ranges above if you still hit an error)
+#   numpy==2.3.5
+#   pandas==2.3.3
+#   jinja2==3.1.6
+#   scipy==1.16.3
+#   matplotlib==3.10.6
+#
+# To run the notebooks you also need Jupyter:
+#   pip install jupyterlab      # or:  pip install notebook
+#   (verified with jupyterlab / nbconvert 7.16.6, ipykernel 6.31.0)

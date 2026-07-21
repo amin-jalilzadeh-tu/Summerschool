@@ -9,7 +9,14 @@ building designs scored on 4 criteria (PV, daylight, compactness, FSI).
 
 
 ## Run
+
+Python 3.9+ (tested on 3.13). Then:
 ```
 pip install -r requirements.txt
-jupyter notebook notebooks/Q1.ipynb
+pip install jupyterlab
+jupyter lab notebooks/Q1.ipynb
 ```
+
+If Q1's coloured table cell errors with `ImportError: ... jinja2`, run
+`pip install jinja2` (it is in requirements.txt). Still stuck? Pin the exact
+tested versions listed at the bottom of requirements.txt.
