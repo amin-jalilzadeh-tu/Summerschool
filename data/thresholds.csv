@@ -1,0 +1,5 @@
+criterion,minimum,stakeholder
+pv,0.70,Municipality
+daylight,0.70,Municipality
+compactness,0.75,Engineering team
+fsi,0.80,Client

@@ -1,0 +1,5 @@
+key,name,direction,description
+pv,PV potential,max,Annual solar radiation received by the roof surfaces
+daylight,Daylighting potential,max,Annual daylight reaching the building facade
+compactness,Relative compactness,max,Volume enclosed per unit of envelope surface (1 = cube)
+fsi,FSI performance,max,Floor Space Index relative to the target density
