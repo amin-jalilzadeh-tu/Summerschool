@@ -21,6 +21,9 @@ matplotlib>=3.5      # used in later notebooks (plots)
 jupyterlab>=4.0      # the notebook interface
 ipykernel>=6.0       # lets the environment run as a notebook kernel
 
+# --- optional: only for scripts that use the Gurobi solver ---
+gurobipy>=11.0       # ships a free restricted licence; fine for small models
+
 # --- exact versions the clean 'summerschool' venv installed and ran on ---
 # (Python 3.14.6; pin these instead of the ranges above for an identical setup)
 #   numpy==2.5.1

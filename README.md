@@ -20,3 +20,17 @@ jupyter lab notebooks/Q1.ipynb
 If Q1's coloured table cell errors with `ImportError: ... jinja2`, run
 `pip install jinja2` (it is in requirements.txt). Still stuck? Pin the exact
 tested versions listed at the bottom of requirements.txt.
+
+### Gurobi (only needed for scripts that use it)
+
+Some scripts use the Gurobi optimiser:
+```
+pip install gurobipy
+```
+The free restricted licence that ships with `gurobipy` already solves small
+models, which is all this project needs - no activation required.
+
+For unlimited use, get a free academic licence at
+https://www.gurobi.com/academia/ and activate it once with
+`grbgetkey <your-key>` (this needs the full Gurobi tools installed, not just
+`pip install gurobipy`). Do not commit your licence key.
