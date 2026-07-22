@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------
 # Case Study 2 - Python dependencies
 #
-# Python 3.9 or newer.  Developed and tested on Python 3.13.9.
+# Python 3.9 or newer.  Validated in a clean virtual environment on Python 3.14.6.
 #
 # Install with:
 #     pip install -r requirements.txt
@@ -21,14 +21,13 @@ matplotlib>=3.5      # used in later notebooks (plots)
 jupyterlab>=4.0      # the notebook interface
 ipykernel>=6.0       # lets the environment run as a notebook kernel
 
-# --- exact versions this repo was verified to run on ---
-# (pin these instead of the ranges above if you still hit an error)
-#   numpy==2.3.5
-#   pandas==2.3.3
+# --- exact versions the clean 'summerschool' venv installed and ran on ---
+# (Python 3.14.6; pin these instead of the ranges above for an identical setup)
+#   numpy==2.5.1
+#   pandas==3.0.3
 #   jinja2==3.1.6
-#   scipy==1.16.3
-#   matplotlib==3.10.6
-#
-# To run the notebooks you also need Jupyter:
-#   pip install jupyterlab      # or:  pip install notebook
-#   (verified with jupyterlab / nbconvert 7.16.6, ipykernel 6.31.0)
+#   scipy==1.18.0
+#   matplotlib==3.11.1
+#   jupyterlab==4.6.2
+#   ipykernel==7.3.0
+#   nbconvert==7.17.1   (pulled in by jupyterlab)
