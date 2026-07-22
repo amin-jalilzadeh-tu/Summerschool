@@ -3,7 +3,14 @@ from numpy.typing import NDArray
 import gurobipy as gp
 from gurobipy import GRB, Model
 
-def BWM(Ab: NDArray[np.float64], Aw: NDArray[np.float64], b: NDArray[np.float64], w: NDArray[np.float64]) -> NDArray[np.float64]:
+def _infer_identity_index(values: NDArray[np.float64], label: str) -> int:
+    matches = np.flatnonzero(np.isclose(values, 1.0))
+    if matches.size != 1:
+        raise ValueError(f"{label} must contain exactly one entry equal to 1.0.")
+    return int(matches[0])
+
+
+def BWM(Ab: NDArray[np.float64], Aw: NDArray[np.float64]) -> NDArray[np.float64]:
     """
     Computes the Best Worst Method (BWM) weights.
 
@@ -13,21 +20,22 @@ def BWM(Ab: NDArray[np.float64], Aw: NDArray[np.float64], b: NDArray[np.float64]
         The best-to-others comparison vector.
     Aw : np.ndarray
         The others-to-worst comparison vector.
-    b : np.ndarray
-        The best criterion index.
-    w : np.ndarray
-        The worst criterion index.
 
     Returns
     -------
     np.ndarray
         The computed weights for each criterion.
     """
-    n = len(Ab)
-    
+    Ab = np.asarray(Ab, dtype=np.float64)
+    Aw = np.asarray(Aw, dtype=np.float64)
 
-    best = int(np.asarray(b).item())
-    worst = int(np.asarray(w).item())
+    if Ab.shape != Aw.shape:
+        raise ValueError("Ab and Aw must have the same shape.")
+
+    n = len(Ab)
+
+    best = _infer_identity_index(Ab, "Ab")
+    worst = _infer_identity_index(Aw, "Aw")
 
     model = Model("BWM")
     model.Params.OutputFlag = 0
