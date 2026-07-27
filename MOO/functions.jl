@@ -50,7 +50,7 @@ function solve_problem(configs::Vector{Configuration}, MIN_PV::Int, MIN_FSI::Int
 
     # Adding the objectives to the model
     # @objective(model, Max, [total_pv, total_fsi, total_daylight, total_compactness])
-    @objective(model, Min, [total_pv, total_daylight, total_compactness, total_fsi])
+    @objective(model, Max, [total_pv, total_daylight, total_compactness, total_fsi])
 
     # set_attribute(model, MOA.Algorithm(), MOA.Lexicographic())
     set_attribute(model, MOA.Algorithm(), MOA.KirlikSayin())

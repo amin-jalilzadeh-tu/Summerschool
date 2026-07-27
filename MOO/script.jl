@@ -11,10 +11,14 @@ end
 
 candidate_configs = collect(values(configurations))
 
+# MIN_PVS = [65, 70, 75]
 MIN_PVS = [70]
+# MIN_FSIS = [75, 80, 85]
 MIN_FSIS = [80]
+# MIN_DAYLIGHTS = [65, 70, 75]
 MIN_DAYLIGHTS = [70]
-MIN_COMPACTNESSES = [75, 90]
+# MIN_COMPACTNESSES = [70, 75, 80]
+MIN_COMPACTNESSES = [75]
 
 configurations = Dict{String, Configuration}(config.id => config for config in candidate_configs)
 
@@ -23,5 +27,17 @@ for MIN_PV in MIN_PVS, MIN_FSI in MIN_FSIS, MIN_DAYLIGHT in MIN_DAYLIGHTS, MIN_C
     sol = solve_problem(candidate_configs, MIN_PV, MIN_FSI, MIN_DAYLIGHT, MIN_COMPACTNESS)
     push!(sols, (sol=sol, MIN_PV=MIN_PV, MIN_FSI=MIN_FSI, MIN_DAYLIGHT=MIN_DAYLIGHT, MIN_COMPACTNESS=MIN_COMPACTNESS))
 end
+
+config_stat = Dict{String, Int64}()
+for sol in sols
+    for id in sol.sol
+        if haskey(config_stat, id)
+            config_stat[id] += 1
+        else
+            config_stat[id] = 1
+        end
+    end
+end
+
 
 display(sols)
