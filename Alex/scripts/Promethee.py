@@ -193,5 +193,5 @@ def plot_promethee_ii_in_out(flow_tot, flow_plus, flow_minus, plottingConfig:Plo
     )
     # fig2.show()
     
-    fig.write_image(f"Results/{plottingConfig.title}_total.png")
-    fig2.write_image(f"Results/{plottingConfig.title}_in_out.png")
+    fig.write_image(f"Alex/Results/{plottingConfig.title}_total.png")
+    fig2.write_image(f"Alex/Results/{plottingConfig.title}_in_out.png")

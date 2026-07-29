@@ -26,5 +26,5 @@ def run_best_worst_method(criteria:list[str], mic:list[int], lic:list[int], plot
             color_discrete_map=COLORS
         )
         # fig.show()
-        fig.write_image(f"Results/{plottingConfig.title}.png")
+        fig.write_image(f"Alex/Results/{plottingConfig.title}.png")
     return weights

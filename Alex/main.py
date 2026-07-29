@@ -46,7 +46,7 @@ plottingConfig = PlottingConfig(
 original_stdout = sys.stdout
 
 # Open log file
-# logfile = open(f"Results/{PROFILE}_PV-{MIN_PV}_daylight-{MIN_DAYLIGHT}_compactness-{MIN_COMPACTNESS}_fsi-{MIN_FSI}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log", "w")
+# logfile = open(f"Alex/Results/{PROFILE}_PV-{MIN_PV}_daylight-{MIN_DAYLIGHT}_compactness-{MIN_COMPACTNESS}_fsi-{MIN_FSI}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log", "w")
 
 # Redirect stdout to both terminal and file
 # sys.stdout = Tee(original_stdout, logfile)
