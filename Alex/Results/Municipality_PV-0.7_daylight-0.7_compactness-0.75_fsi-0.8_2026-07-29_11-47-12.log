@@ -1,0 +1,230 @@
+
+YOU ARE ASSUMING THE ROLE OF: Municipality
+    Best: [2 1 9 4] -> ['daylight'] to all others
+    Worst: [7 9 1 4] -> all others to ['compactness']
+
+
+THRESHOLD IS:
+    MIN_PV:          0.7
+    MIN_DAYLIGHT:    0.7
+    MIN_COMPACTNESS: 0.75
+    MIN_FSI:         0.8
+      
+All Data:
+0: HouseConfig(id=C1, pv=0.8, daylight=0.75, compactness=0.81, fsi=0.88)
+1: HouseConfig(id=C2, pv=0.72, daylight=0.81, compactness=0.91, fsi=0.78)
+2: HouseConfig(id=C3, pv=0.86, daylight=0.63, compactness=0.74, fsi=0.96)
+3: HouseConfig(id=C4, pv=0.68, daylight=0.88, compactness=0.84, fsi=0.82)
+4: HouseConfig(id=C5, pv=0.91, daylight=0.58, compactness=0.69, fsi=0.98)
+5: HouseConfig(id=C6, pv=0.75, daylight=0.77, compactness=0.88, fsi=0.87)
+6: HouseConfig(id=C7, pv=0.62, daylight=0.92, compactness=0.79, fsi=0.72)
+7: HouseConfig(id=C8, pv=0.83, daylight=0.7, compactness=0.76, fsi=0.94)
+8: HouseConfig(id=C9, pv=0.57, daylight=0.95, compactness=0.86, fsi=0.66)
+9: HouseConfig(id=C10, pv=0.88, daylight=0.66, compactness=0.72, fsi=0.99)
+10: HouseConfig(id=C11, pv=0.79, daylight=0.74, compactness=0.82, fsi=0.9)
+11: HouseConfig(id=C12, pv=0.64, daylight=0.84, compactness=0.94, fsi=0.7)
+12: HouseConfig(id=C13, pv=0.93, daylight=0.55, compactness=0.65, fsi=1.0)
+13: HouseConfig(id=C14, pv=0.7, daylight=0.8, compactness=0.9, fsi=0.84)
+14: HouseConfig(id=C15, pv=0.81, daylight=0.72, compactness=0.78, fsi=0.92)
+15: HouseConfig(id=C16, pv=0.59, daylight=0.89, compactness=0.96, fsi=0.68)
+16: HouseConfig(id=C17, pv=0.9, daylight=0.61, compactness=0.7, fsi=0.97)
+17: HouseConfig(id=C18, pv=0.73, daylight=0.76, compactness=0.85, fsi=0.89)
+18: HouseConfig(id=C19, pv=0.66, daylight=0.86, compactness=0.89, fsi=0.75)
+19: HouseConfig(id=C20, pv=0.85, daylight=0.69, compactness=0.73, fsi=0.95)
+20: HouseConfig(id=C21, pv=0.77, daylight=0.79, compactness=0.8, fsi=0.86)
+21: HouseConfig(id=C22, pv=0.6, daylight=0.93, compactness=0.83, fsi=0.69)
+22: HouseConfig(id=C23, pv=0.94, daylight=0.52, compactness=0.63, fsi=0.99)
+23: HouseConfig(id=C24, pv=0.69, daylight=0.83, compactness=0.92, fsi=0.79)
+24: HouseConfig(id=C25, pv=0.82, daylight=0.71, compactness=0.77, fsi=0.91)
+25: HouseConfig(id=C26, pv=0.56, daylight=0.97, compactness=0.87, fsi=0.64)
+26: HouseConfig(id=C27, pv=0.87, daylight=0.67, compactness=0.75, fsi=0.93)
+27: HouseConfig(id=C28, pv=0.74, daylight=0.78, compactness=0.86, fsi=0.85)
+28: HouseConfig(id=C29, pv=0.63, daylight=0.9, compactness=0.93, fsi=0.73)
+29: HouseConfig(id=C30, pv=0.89, daylight=0.64, compactness=0.71, fsi=0.96)
+
+Filtered Data:
+0: HouseConfig(id=C1, pv=0.8, daylight=0.75, compactness=0.81, fsi=0.88)
+1: HouseConfig(id=C6, pv=0.75, daylight=0.77, compactness=0.88, fsi=0.87)
+2: HouseConfig(id=C8, pv=0.83, daylight=0.7, compactness=0.76, fsi=0.94)
+3: HouseConfig(id=C11, pv=0.79, daylight=0.74, compactness=0.82, fsi=0.9)
+4: HouseConfig(id=C14, pv=0.7, daylight=0.8, compactness=0.9, fsi=0.84)
+5: HouseConfig(id=C15, pv=0.81, daylight=0.72, compactness=0.78, fsi=0.92)
+6: HouseConfig(id=C18, pv=0.73, daylight=0.76, compactness=0.85, fsi=0.89)
+7: HouseConfig(id=C21, pv=0.77, daylight=0.79, compactness=0.8, fsi=0.86)
+8: HouseConfig(id=C25, pv=0.82, daylight=0.71, compactness=0.77, fsi=0.91)
+9: HouseConfig(id=C28, pv=0.74, daylight=0.78, compactness=0.86, fsi=0.85)
+
+Best-Worst Method Weights:
+CR: 0.0972 (The Consistency Level is Acceptable)
+Epsilon Value: 0.0629
+########################################
+Best-Worst Method Weights: Results
+	pv         : 0.29
+	daylight   : 0.52
+	compactness: 0.05
+	fsi        : 0.14
+########################################
+########################################
+Weighted Sum Results - best to worst:
+	HouseConfig(id=C21, pv=0.77, daylight=0.79, compactness=0.8, fsi=0.86) - Weighted Sum: 0.79
+	HouseConfig(id=C1, pv=0.8, daylight=0.75, compactness=0.81, fsi=0.88) - Weighted Sum: 0.79
+	HouseConfig(id=C6, pv=0.75, daylight=0.77, compactness=0.88, fsi=0.87) - Weighted Sum: 0.78
+	HouseConfig(id=C28, pv=0.74, daylight=0.78, compactness=0.86, fsi=0.85) - Weighted Sum: 0.78
+	HouseConfig(id=C14, pv=0.7, daylight=0.8, compactness=0.9, fsi=0.84) - Weighted Sum: 0.78
+	HouseConfig(id=C11, pv=0.79, daylight=0.74, compactness=0.82, fsi=0.9) - Weighted Sum: 0.78
+	HouseConfig(id=C15, pv=0.81, daylight=0.72, compactness=0.78, fsi=0.92) - Weighted Sum: 0.78
+	HouseConfig(id=C8, pv=0.83, daylight=0.7, compactness=0.76, fsi=0.94) - Weighted Sum: 0.78
+	HouseConfig(id=C18, pv=0.73, daylight=0.76, compactness=0.85, fsi=0.89) - Weighted Sum: 0.77
+	HouseConfig(id=C25, pv=0.82, daylight=0.71, compactness=0.77, fsi=0.91) - Weighted Sum: 0.77
+########################################
+########################################
+MAUT Results - best to worst:
+	HouseConfig(id=C21, pv=0.77, daylight=0.79, compactness=0.8, fsi=0.86) - Score: 0.66
+	HouseConfig(id=C14, pv=0.7, daylight=0.8, compactness=0.9, fsi=0.84) - Score: 0.57
+	HouseConfig(id=C6, pv=0.75, daylight=0.77, compactness=0.88, fsi=0.87) - Score: 0.56
+	HouseConfig(id=C1, pv=0.8, daylight=0.75, compactness=0.81, fsi=0.88) - Score: 0.56
+	HouseConfig(id=C28, pv=0.74, daylight=0.78, compactness=0.86, fsi=0.85) - Score: 0.55
+	HouseConfig(id=C11, pv=0.79, daylight=0.74, compactness=0.82, fsi=0.9) - Score: 0.51
+	HouseConfig(id=C18, pv=0.73, daylight=0.76, compactness=0.85, fsi=0.89) - Score: 0.48
+	HouseConfig(id=C15, pv=0.81, daylight=0.72, compactness=0.78, fsi=0.92) - Score: 0.47
+	HouseConfig(id=C8, pv=0.83, daylight=0.7, compactness=0.76, fsi=0.94) - Score: 0.43
+	HouseConfig(id=C25, pv=0.82, daylight=0.71, compactness=0.77, fsi=0.91) - Score: 0.42
+########################################
+########################################
+Promethee II Results - best to worst:
+	HouseConfig(id=C21, pv=0.77, daylight=0.79, compactness=0.8, fsi=0.86) - Net Flow: 0.04
+	HouseConfig(id=C1, pv=0.8, daylight=0.75, compactness=0.81, fsi=0.88) - Net Flow: 0.02
+	HouseConfig(id=C6, pv=0.75, daylight=0.77, compactness=0.88, fsi=0.87) - Net Flow: 0.01
+	HouseConfig(id=C11, pv=0.79, daylight=0.74, compactness=0.82, fsi=0.9) - Net Flow: 0.01
+	HouseConfig(id=C28, pv=0.74, daylight=0.78, compactness=0.86, fsi=0.85) - Net Flow: 0.0
+	HouseConfig(id=C15, pv=0.81, daylight=0.72, compactness=0.78, fsi=0.92) - Net Flow: -0.01
+	HouseConfig(id=C14, pv=0.7, daylight=0.8, compactness=0.9, fsi=0.84) - Net Flow: -0.01
+	HouseConfig(id=C8, pv=0.83, daylight=0.7, compactness=0.76, fsi=0.94) - Net Flow: -0.02
+	HouseConfig(id=C25, pv=0.82, daylight=0.71, compactness=0.77, fsi=0.91) - Net Flow: -0.02
+	HouseConfig(id=C18, pv=0.73, daylight=0.76, compactness=0.85, fsi=0.89) - Net Flow: -0.03
+########################################
+########################################
+Electre I Results:
+Concordance Matrix:
+[[1.   0.43 0.57 0.81 0.43 0.57 0.29 0.48 0.57 0.43]
+ [0.57 1.   0.57 0.57 0.43 0.57 0.86 0.19 0.57 0.48]
+ [0.43 0.43 1.   0.43 0.43 0.43 0.43 0.43 0.43 0.43]
+ [0.19 0.43 0.57 1.   0.43 0.57 0.43 0.48 0.57 0.43]
+ [0.57 0.57 0.57 0.57 1.   0.57 0.57 0.57 0.57 0.57]
+ [0.43 0.43 0.57 0.43 0.43 1.   0.43 0.43 0.71 0.43]
+ [0.71 0.14 0.57 0.57 0.43 0.57 1.   0.19 0.57 0.14]
+ [0.52 0.81 0.57 0.52 0.43 0.57 0.81 1.   0.57 0.95]
+ [0.43 0.43 0.57 0.43 0.43 0.29 0.43 0.43 1.   0.43]
+ [0.57 0.52 0.57 0.57 0.43 0.57 0.86 0.05 0.57 1.  ]]
+Discordance Matrix:
+[[0.   0.5  0.43 0.14 0.64 0.29 0.29 0.29 0.21 0.36]
+ [0.36 0.   0.57 0.29 0.21 0.43 0.14 0.14 0.5  0.07]
+ [0.36 0.86 0.   0.43 1.   0.14 0.64 0.64 0.07 0.71]
+ [0.07 0.43 0.29 0.   0.57 0.14 0.21 0.36 0.21 0.29]
+ [0.71 0.36 0.93 0.64 0.   0.79 0.36 0.5  0.86 0.29]
+ [0.21 0.71 0.14 0.29 0.86 0.   0.5  0.5  0.07 0.57]
+ [0.5  0.21 0.71 0.43 0.36 0.57 0.   0.29 0.64 0.14]
+ [0.21 0.57 0.57 0.29 0.71 0.43 0.36 0.   0.36 0.43]
+ [0.29 0.79 0.21 0.36 0.93 0.07 0.57 0.57 0.   0.64]
+ [0.43 0.14 0.64 0.36 0.29 0.5  0.29 0.21 0.57 0.  ]]
+Dominance Matrix:
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+Kernel (Best Alternatives):
+	1: C1
+	2: C6
+	3: C8
+	4: C14
+	5: C15
+	6: C21
+	7: C28
+Dominated Alternatives:
+	1: C11
+	2: C18
+	3: C25
+########################################
+########################################
+Electre II Results:
+Concordance Matrix:
+[[1.   0.43 0.57 0.81 0.43 0.57 0.29 0.48 0.57 0.43]
+ [0.57 1.   0.57 0.57 0.43 0.57 0.86 0.19 0.57 0.48]
+ [0.43 0.43 1.   0.43 0.43 0.43 0.43 0.43 0.43 0.43]
+ [0.19 0.43 0.57 1.   0.43 0.57 0.43 0.48 0.57 0.43]
+ [0.57 0.57 0.57 0.57 1.   0.57 0.57 0.57 0.57 0.57]
+ [0.43 0.43 0.57 0.43 0.43 1.   0.43 0.43 0.71 0.43]
+ [0.71 0.14 0.57 0.57 0.43 0.57 1.   0.19 0.57 0.14]
+ [0.52 0.81 0.57 0.52 0.43 0.57 0.81 1.   0.57 0.95]
+ [0.43 0.43 0.57 0.43 0.43 0.29 0.43 0.43 1.   0.43]
+ [0.57 0.52 0.57 0.57 0.43 0.57 0.86 0.05 0.57 1.  ]]
+Discordance Matrix:
+[[0.   0.5  0.43 0.14 0.64 0.29 0.29 0.29 0.21 0.36]
+ [0.36 0.   0.57 0.29 0.21 0.43 0.14 0.14 0.5  0.07]
+ [0.36 0.86 0.   0.43 1.   0.14 0.64 0.64 0.07 0.71]
+ [0.07 0.43 0.29 0.   0.57 0.14 0.21 0.36 0.21 0.29]
+ [0.71 0.36 0.93 0.64 0.   0.79 0.36 0.5  0.86 0.29]
+ [0.21 0.71 0.14 0.29 0.86 0.   0.5  0.5  0.07 0.57]
+ [0.5  0.21 0.71 0.43 0.36 0.57 0.   0.29 0.64 0.14]
+ [0.21 0.57 0.57 0.29 0.71 0.43 0.36 0.   0.36 0.43]
+ [0.29 0.79 0.21 0.36 0.93 0.07 0.57 0.57 0.   0.64]
+ [0.43 0.14 0.64 0.36 0.29 0.5  0.29 0.21 0.57 0.  ]]
+Dominance Strong Matrix:
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+Dominance Weak Matrix:
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 1.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+Rank - Decending:
+	Rank 1: ['C21']
+	Rank 2: ['C1', 'C6', 'C15', 'C28']
+	Rank 3: ['C8', 'C11', 'C14', 'C18', 'C25']
+Rank - Ascending:
+	Rank 1: ['C1', 'C6', 'C8', 'C14', 'C21', 'C15']
+	Rank 2: ['C11', 'C25', 'C28']
+	Rank 3: ['C18']
+Rank - Neutral:
+	Rank 1: C1
+	Rank 2: C28
+	Rank 3: C6
+	Rank 4: C8
+	Rank 5: C11
+	Rank 6: C14
+	Rank 7: C15
+	Rank 8: C18
+	Rank 9: C21
+	Rank 10: C25
+Rank - Final:
+[['-' 'I' 'P+' 'P+' 'P+' 'I' 'P+' 'P-' 'P+' 'P+']
+ ['I' '-' 'P+' 'P+' 'P+' 'I' 'P+' 'P-' 'P+' 'P+']
+ ['P-' 'P-' '-' 'P+' 'I' 'P-' 'P+' 'P-' 'P+' 'R']
+ ['P-' 'P-' 'P-' '-' 'P-' 'P-' 'P+' 'P-' 'I' 'P-']
+ ['P-' 'P-' 'I' 'P+' '-' 'P-' 'P+' 'P-' 'P+' 'R']
+ ['I' 'I' 'P+' 'P+' 'P+' '-' 'P+' 'P-' 'P+' 'P+']
+ ['P-' 'P-' 'P-' 'P-' 'P-' 'P-' '-' 'P-' 'P-' 'P-']
+ ['P+' 'P+' 'P+' 'P+' 'P+' 'P+' 'P+' '-' 'P+' 'P+']
+ ['P-' 'P-' 'P-' 'I' 'P-' 'P-' 'P+' 'P-' '-' 'P-']
+ ['P-' 'P-' 'R' 'P+' 'R' 'P-' 'P+' 'P-' 'P+' '-']]
+########################################
